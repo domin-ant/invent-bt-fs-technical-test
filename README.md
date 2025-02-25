@@ -28,9 +28,9 @@ For these examples the frontend does not connect to the backend and visa vera, t
 
 > To start the backend ensure you are in the `/backend/typescript` and run `npm run build` and `npm start` the service will start on [http://localhost:3010](http://localhost:3010)
 
-- C# - with .NET Core 3.1 or .NET 6
+- C# - with .NET 8
 
-> To start the backend ensure you are in the `/backend/csharpdotnet-3/dotnetcore3` or `/backend/csharpdotnet-6/dotnet6` and run `dotnet run` the service will start on [http://localhost:5050](http://localhost:5050)
+> To start the backend ensure you are in the `/backend/csharpdotnet-8/dotnet8` and run `dotnet run` the service will start on [http://localhost:5050](http://localhost:5050)
 
 ## Task
 
@@ -60,6 +60,6 @@ Please work as you would normally do
 
 - Build a checkout system which takes a list of items scanned at the till and outputs the total cost. See /total endpoint
 - For example: [ Apple, Apple, Orange, Apple ] => £2.05
-- Make reasonable assumptions about the inputs to your solution; for example, many candidates take a list of strings as input
+- Make reasonable assumptions about the inputs to your solution; for example, many candidates take a list of strings as input
 
 > Think about edge cases and how you would handle them e.g. empty list, null, invalid items, etc.

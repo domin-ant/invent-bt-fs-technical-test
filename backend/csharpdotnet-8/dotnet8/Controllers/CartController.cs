@@ -1,10 +1,11 @@
-﻿using dotnet6.Interfaces;
-using dotnet6.Models;
+using dotnet8.Interfaces;
+using dotnet8.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet6.Controllers;
+namespace dotnet8.Controllers;
 
 [ApiController]
+[Route("api/[controller]")]
 [Produces("application/json")]
 public class CartController : ControllerBase
 {
@@ -24,10 +25,13 @@ public class CartController : ControllerBase
 
     [Route("total")]
     [HttpPost]
-    public ActionResult<double> GetTotalPrice(string[] items)
+    public ActionResult<double> GetTotalPrice([FromBody] string[] items)
     {
-        throw new NotImplementedException();
+        if (items == null)
+        {
+            return BadRequest("Items array cannot be null");
+        }
+
+        return Ok(_cartService.CalculateTotal(items));
     }
-
-}
-
+} 
