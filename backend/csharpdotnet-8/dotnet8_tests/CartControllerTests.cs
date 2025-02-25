@@ -1,10 +1,10 @@
-﻿using dotnet6.Controllers;
-using dotnet6.Interfaces;
-using dotnet6.Models;
-using dotnet6.Services;
+using dotnet8.Controllers;
+using dotnet8.Interfaces;
+using dotnet8.Models;
+using dotnet8.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet6_tests;
+namespace dotnet8_tests;
 
 public class CartControllerTests
 {
@@ -22,4 +22,4 @@ public class CartControllerTests
         Assert.Equal("Apple", productList[0].ItemName);
         Assert.Equal(25, productList[1].Price);
     }
-}
+} 

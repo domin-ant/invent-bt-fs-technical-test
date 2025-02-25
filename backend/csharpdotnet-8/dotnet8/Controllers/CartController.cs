@@ -1,8 +1,8 @@
-﻿using dotnet6.Interfaces;
-using dotnet6.Models;
+using dotnet8.Interfaces;
+using dotnet8.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet6.Controllers;
+namespace dotnet8.Controllers;
 
 [ApiController]
 [Produces("application/json")]
@@ -28,6 +28,4 @@ public class CartController : ControllerBase
     {
         throw new NotImplementedException();
     }
-
-}
-
+} 
